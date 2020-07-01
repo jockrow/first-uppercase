@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "masterraise-first-uppercase",
-				"title": "To First Uppercase"
+				"title": "First Uppercase"
 			}
 		]
 	},

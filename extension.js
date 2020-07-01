@@ -12,31 +12,25 @@ function activate(context) {
 	let disposable = vscode.commands.registerCommand('masterraise-first-uppercase', function () {
 		let editor = vscode.window.activeTextEditor;
 		let text = editor.document.getText(editor.selection);
-
-		let separators = [" "
-			// , "	"
-			// , "."
-		];
-
+		let separator = " ";
 		let nameCapitalized = "";
-		for (let s = 0; s < separators.length; s++) {
-			// let separator = " ";
-			let arrText = text.split("\n");
-			for (let l = 0; l < arrText.length; l++) {
-				// let arrLine = arrText[l].split(String.valueOf(separator));
-				let arrLine = arrText[l].split(separators[s]);
-				let line = "";
+		let arrText = text.split("\n");
 
-				for (let i = 0; i < arrLine.length; i++) {
-					let parts = arrLine[i].match(/(\w)(.*)/);
-					// line += separator + StringUtils.capitalize(arrLine[i].toLowerCase());
-					line += separators[s] + parts[1].toUpperCase() + parts[2].toLowerCase();
-				}
-				// nameCapitalized += line.replaceAll("^" + separator, "") + "\n";
-				nameCapitalized += line.replace(new RegExp("^" + separators[s]), "") + "\n";
+		for (let l = 0; l < arrText.length; l++) {
+			if (arrText[l].trim() == "") {
+				nameCapitalized += arrText[l] + "\n";
+				continue;
 			}
-			nameCapitalized = nameCapitalized.replace(/\n$/, "")
+			let arrLine = arrText[l].split(separator);
+			let line = "";
+
+			for (let i = 0; i < arrLine.length; i++) {
+				let parts = arrLine[i].match(/(\w)(.*)/);
+				line += separator + parts[1].toUpperCase() + parts[2].toLowerCase();
+			}
+			nameCapitalized += line.replace(new RegExp("^" + separator), "") + "\n";
 		}
+		nameCapitalized = nameCapitalized.replace(/\n$/, "")
 
 		editor.edit(
 			edit => editor.selections.forEach(
