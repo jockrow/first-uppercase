@@ -1,6 +1,6 @@
-# masterraise-first-uppercase README
+# jockrow-first-uppercase README
 
-This is the README for your extension "masterraise-first-uppercase". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "jockrow-first-uppercase". After writing up a brief description, we recommend including the following sections.
 
 
 ## Features

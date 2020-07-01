@@ -9,7 +9,7 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	let disposable = vscode.commands.registerCommand('masterraise-first-uppercase', function () {
+	let disposable = vscode.commands.registerCommand('jockrow-first-uppercase', function () {
 		let editor = vscode.window.activeTextEditor;
 		let text = editor.document.getText(editor.selection);
 		let separator = " ";

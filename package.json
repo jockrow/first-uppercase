@@ -1,6 +1,6 @@
 {
-	"name": "masterraise-first-uppercase",
-	"displayName": "masterraise-first-uppercase",
+	"name": "jockrow-first-uppercase",
+	"displayName": "jockrow-first-uppercase",
 	"description": "Change all words at lowercase and his first letter to uppercase",
 	"version": "0.0.1",
 	"engines": {
@@ -10,13 +10,13 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:masterraise-first-uppercase"
+		"onCommand:jockrow-first-uppercase"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "masterraise-first-uppercase",
+				"command": "jockrow-first-uppercase",
 				"title": "First Uppercase"
 			}
 		]
