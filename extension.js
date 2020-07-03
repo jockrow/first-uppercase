@@ -48,18 +48,6 @@ exports.activate = activate;
 // this method is called when your extension is deactivated
 function deactivate() { }
 
-String.prototype.ucfirst = function () {
-	// let ucfirst = function () {
-	// let x = vscode.window.activeTextEditor;
-	let x = this.split(/\s+/g);
-	// let x = x.split(/\s+/g);
-	for (let i = 0; i < x.length; i++) {
-		let parts = x[i].match(/(\w)(\w*)/);
-		x[i] = parts[1].toUpperCase() + parts[2].toLowerCase();
-	}
-	return x.join(' ');
-};
-
 module.exports = {
 	activate,
 	deactivate

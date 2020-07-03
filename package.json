@@ -9,6 +9,12 @@
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+		"replace",
+		"uppercase",
+		"lowercase",
+		"keybindings"
+	],
 	"activationEvents": [
 		"onCommand:jockrow-first-uppercase"
 	],
@@ -21,6 +27,12 @@
 			}
 		]
 	},
+	"keybindings": [
+		{
+			"command": "jockrow-first-uppercase",
+			"key": "shift+alt+u"
+		}
+	],
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
