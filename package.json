@@ -1,8 +1,9 @@
 {
-	"name": "jockrow-first-uppercase",
-	"displayName": "jockrow-first-uppercase",
+	"name": "first-uppercase",
+	"displayName": "Convert First Uppercase",
 	"description": "Change all words at lowercase and his first letter to uppercase",
 	"version": "0.0.1",
+	"publisher": "jockrow",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
@@ -16,20 +17,20 @@
 		"keybindings"
 	],
 	"activationEvents": [
-		"onCommand:jockrow-first-uppercase"
+		"onCommand:first-uppercase"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "jockrow-first-uppercase",
+				"command": "first-uppercase",
 				"title": "First Uppercase"
 			}
 		]
 	},
 	"keybindings": [
 		{
-			"command": "jockrow-first-uppercase",
+			"command": "first-uppercase",
 			"key": "shift+alt+u"
 		}
 	],
