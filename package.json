@@ -12,8 +12,7 @@
 	],
 	"keywords": [
 		"replace",
-		"uppercase",
-		"lowercase",
+		"text",
 		"keybindings"
 	],
 	"activationEvents": [
