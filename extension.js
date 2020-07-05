@@ -10,9 +10,9 @@ const vscode = require('vscode');
  */
 function activate(context) {
 	let disposable = vscode.commands.registerCommand('first-uppercase', function () {
+		let SEP = " ";
 		let editor = vscode.window.activeTextEditor;
 		let text = editor.document.getText(editor.selection);
-		let separator = " ";
 		let nameCapitalized = "";
 		let arrText = text.split("\n");
 
@@ -21,14 +21,14 @@ function activate(context) {
 				nameCapitalized += arrText[l] + "\n";
 				continue;
 			}
-			let arrLine = arrText[l].split(separator);
+			let arrLine = arrText[l].split(SEP);
 			let line = "";
 
 			for (let i = 0; i < arrLine.length; i++) {
 				let parts = arrLine[i].match(/(\w)(.*)/);
-				line += separator + parts[1].toUpperCase() + parts[2].toLowerCase();
+				line += SEP + parts[1].toUpperCase() + parts[2].toLowerCase();
 			}
-			nameCapitalized += line.replace(new RegExp("^" + separator), "") + "\n";
+			nameCapitalized += line.replace(new RegExp("^" + SEP), "") + "\n";
 		}
 		nameCapitalized = nameCapitalized.replace(/\n$/, "")
 
