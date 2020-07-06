@@ -3,6 +3,7 @@
 Replace a selected text by applying each space separated word with its first letter in UPPER CASE and next in lower case.
 
 If you would like to buy me a coffee
+
 [![donate](https://img.shields.io/badge/Donate-PayPal-green.svg "paypal")](https://paypal.me/jockrow?locale.x=es_XC)
 
 
@@ -15,5 +16,4 @@ If you would like to buy me a coffee
 ## Release Notes
 
 ### 1.1.0
-
 First Release.
