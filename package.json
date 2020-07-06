@@ -20,6 +20,13 @@
 	],
 	"main": "./extension.js",
 	"contributes": {
+		"keybindings": [
+			{
+			"command": "first-uppercase",
+			"key": "shift+alt+u",
+			"when": "editorTextFocus"
+			}
+		  ],
 		"commands": [
 			{
 				"command": "first-uppercase",
@@ -27,12 +34,6 @@
 			}
 		]
 	},
-	"keybindings": [
-		{
-			"command": "first-uppercase",
-			"key": "shift+alt+u"
-		}
-	],
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
