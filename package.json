@@ -4,6 +4,12 @@
 	"description": "Change all words at lowercase and his first letter to uppercase",
 	"version": "0.0.1",
 	"publisher": "jockrow",
+	"icon": "images/icon.png",
+	"author": {
+		"email": "r.martinezdk@gmail.com",
+		"name": "Richard Martínez"
+	},
+	"repository": "https://github.com/jockrow/first-uppercase",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
