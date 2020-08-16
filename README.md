@@ -2,7 +2,7 @@
 
 Replace a selected text by applying each space separated word with its first letter in UPPER CASE and next in lower case.
 
-If you would like to buy me a coffee
+If you would like this extension you can support me:
 
 [![donate](https://img.shields.io/badge/Donate-PayPal-green.svg "paypal")](https://paypal.me/jockrow?locale.x=es_XC)
 
