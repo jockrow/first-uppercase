@@ -2,7 +2,7 @@
 	"name": "first-uppercase",
 	"displayName": "Convert First Uppercase",
 	"description": "Change all words at lowercase and his first letter to uppercase",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "jockrow",
 	"icon": "images/icon.png",
 	"author": {
