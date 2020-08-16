@@ -14,6 +14,8 @@ If you would like this extension you can support me:
 ![using](https://raw.githubusercontent.com/jockrow/first-uppercase/master/images/using.gif)
 
 ## Release Notes
+### 0.0.2
+Fix eror when try to convert text with symbols
 
-### 1.1.0
+### 0.0.1
 First Release.
